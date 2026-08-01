@@ -5,20 +5,20 @@
 class Tunepipe < Formula
   desc "A minimal TUI music player powered by yt-dlp"
   homepage "https://github.com/Arnel-rah/tunepipe"
-  version "0.1.4"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Arnel-rah/tunepipe/releases/download/v0.1.4/tunepipe_darwin_amd64.tar.gz"
-      sha256 "c80507f1c36dec50031dcd2f80a139458399b70503357d6df4987f78e4a75d70"
+      url "https://github.com/Arnel-rah/tunepipe/releases/download/v0.2.0/tunepipe_darwin_amd64.tar.gz"
+      sha256 "2d8a709ccae5e398324a136f0ad41bbae92975d930db9161d4305da7148b6a44"
 
       define_method(:install) do
         bin.install "tunepipe"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Arnel-rah/tunepipe/releases/download/v0.1.4/tunepipe_darwin_arm64.tar.gz"
-      sha256 "389d3c1d7610534d1aed06fa2ff4259ab950f46d9d4d08d8e38642a02336c38e"
+      url "https://github.com/Arnel-rah/tunepipe/releases/download/v0.2.0/tunepipe_darwin_arm64.tar.gz"
+      sha256 "dc3535b3c1636159e7f9c2ff53e88c53457695a7529b42ff27c185e2dcf4d8ba"
 
       define_method(:install) do
         bin.install "tunepipe"
@@ -28,15 +28,15 @@ class Tunepipe < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Arnel-rah/tunepipe/releases/download/v0.1.4/tunepipe_linux_amd64.tar.gz"
-      sha256 "77b4d92ed83618473a2e7877646c6269cb82ef179ce1464d2bfb47cdf4703759"
+      url "https://github.com/Arnel-rah/tunepipe/releases/download/v0.2.0/tunepipe_linux_amd64.tar.gz"
+      sha256 "2d835e5e57d14184117f3629f72da7f1c4ae5dda77577bd85ca28e1670e38322"
       define_method(:install) do
         bin.install "tunepipe"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Arnel-rah/tunepipe/releases/download/v0.1.4/tunepipe_linux_arm64.tar.gz"
-      sha256 "dd738938f293fd4a857af86700151b8003fb6fcd1e4f051a750ef8594d76e3d9"
+      url "https://github.com/Arnel-rah/tunepipe/releases/download/v0.2.0/tunepipe_linux_arm64.tar.gz"
+      sha256 "51edbe0db8d7653fda770c04175b49444a9c3e374e4f5d07d18a1bc8d07270b4"
       define_method(:install) do
         bin.install "tunepipe"
       end
