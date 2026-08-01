@@ -10,7 +10,7 @@ class Tunepipe < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Arnel-rah/tunepipe/releases/download/v0.2.0/tunepipe_darwin_amd64.tar.gz"
-      sha256 "2d8a709ccae5e398324a136f0ad41bbae92975d930db9161d4305da7148b6a44"
+      sha256 "53ee7636d11cccedf5da113cd48d2d43e966d4f8a3c887170dcde09e5ecd772d"
 
       define_method(:install) do
         bin.install "tunepipe"
@@ -18,7 +18,7 @@ class Tunepipe < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/Arnel-rah/tunepipe/releases/download/v0.2.0/tunepipe_darwin_arm64.tar.gz"
-      sha256 "dc3535b3c1636159e7f9c2ff53e88c53457695a7529b42ff27c185e2dcf4d8ba"
+      sha256 "e3af160b368e2530a2323f0848b4d9f4d5b315e0b2d35fc628cf466df8d1a03b"
 
       define_method(:install) do
         bin.install "tunepipe"
@@ -29,14 +29,14 @@ class Tunepipe < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/Arnel-rah/tunepipe/releases/download/v0.2.0/tunepipe_linux_amd64.tar.gz"
-      sha256 "2d835e5e57d14184117f3629f72da7f1c4ae5dda77577bd85ca28e1670e38322"
+      sha256 "6bb0449655b94049a1fa2cf9106718c626888d6cb1cedc34db47b0b845ae1d0f"
       define_method(:install) do
         bin.install "tunepipe"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/Arnel-rah/tunepipe/releases/download/v0.2.0/tunepipe_linux_arm64.tar.gz"
-      sha256 "51edbe0db8d7653fda770c04175b49444a9c3e374e4f5d07d18a1bc8d07270b4"
+      sha256 "8c84e39e03508057a8d9face741a1e678deab4907f7b02b22d664ef9edabe97a"
       define_method(:install) do
         bin.install "tunepipe"
       end
